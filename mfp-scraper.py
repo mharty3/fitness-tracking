@@ -35,4 +35,16 @@ def date_range_scrape(username, start_date, end_date):
                                                   'Fat[%]', 'Protein[%]']
     return pd.DataFrame(data, columns=columns).set_index('Date')
 
-print(date_range_scrape('mharty3', '2017-03-09', '2017-03-11'))
+if __name__ == '__main__':
+    username = input('What is your username?  ')
+    start_date = input('Enter the first date. (YYYY-MM-DD)  ')
+    end_date = input('Enter the last date. (YYYY-MM-DD)  ')
+    out_path = input('Enter the path to the .csv file ')
+
+    df = date_range_scrape(username, start_date, end_date)
+    print(df)
+    df.to_csv(out_path)
+
+
+
+
