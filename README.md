@@ -1,2 +1,2 @@
 # fitness-tracking
-tool to interface with myfitnesspal for tracking caloric intake, body fat, weight
+tool to interface with myfitnesspal for tracking calories and macros
